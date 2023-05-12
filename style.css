@@ -242,17 +242,7 @@ header {
         max-width: 100%;
       }
       
-      .article-content {
-        flex: 1 1 auto;
-        background-color: #fff;
-        padding: 20px;
-        border: 2px solid #000;
-      }
-      
-      .article-content h2 {
-        font-size: 28px;
-        margin-top: 0;
-      }
+     
       
       .article-quote {
         margin-bottom: 20px;
@@ -282,5 +272,32 @@ header {
       .article-link:hover {
         background-color: #444;
       }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
       
+      .item {
+        width: calc(25% - 10px);
+        margin-bottom: 20px;
+        position: relative;
+      }
       
+      .item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+      }
